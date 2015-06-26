@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     sass: {                                 // Task
        dist: {     
          files: {
-           'ZP_PyDash/assets/stylesheets/application.css':'.compile/build.scss'
+           'ST_PyDash/assets/stylesheets/application.css':'.compile/build.scss'
          }
        }
     }

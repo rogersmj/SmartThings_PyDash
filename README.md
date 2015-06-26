@@ -1,3 +1,5 @@
+# *This does NOT work right now! This branch is mid-refactor and very broken.* #
+
 
 # SmartThings PyDash
 ##### Credits:

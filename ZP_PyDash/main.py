@@ -20,7 +20,13 @@ def main():
         print "Error setting Host URL"
         exit()
     if(zp_st.initd()):
-        return render_template('main.html', title='ZP SmartThings PyDash')
+        # If a template called "main.html" exists, use that. Otherwise, example.html.
+        if(os.path.isfile("./templates/main.html")):
+            templateFile = "main.html"
+        else:
+            templateFile = "example.html"
+
+        return render_template(templateFile, title='ZP SmartThings PyDash')
     else:
         return redirect("/auth/")
 
